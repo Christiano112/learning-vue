@@ -2,12 +2,16 @@
   <CounterApp />
   <myConditionals :tellThem="tell" />
   <ExtraPlay />
+  <myLoops />
+  <myTodo />
 </template>
 
 <script>
 import CounterApp from './components/Counter.vue';
 import myConditionals from './components/Conditionals.vue';
 import ExtraPlay from './components/Extra.vue';
+import myLoops from "./components/Loop.vue";
+import myTodo from "./components/Todo.vue";
 
 export default {
   name: 'App',
@@ -15,6 +19,8 @@ export default {
     CounterApp,
     myConditionals,
     ExtraPlay,
+    myLoops,
+    myTodo,
   },
 
   data() {
@@ -27,6 +33,12 @@ export default {
 </script>
 
 <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -11,6 +11,7 @@
         <div>
             <p>{{ uppercase }}</p>
             <p>{{slice}}</p>
+            <button :disabled="isDisabled" @click="alert">Button</button>
         </div>
     </div>
 </template>
@@ -24,13 +25,18 @@ export default {
         return {
             age: 16,
             name: "Chris",
-            summary: "lorem ipsum dolor sit amet consectetur adipisicing elit."
+            summary: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            isDisabled: false,
         }
     },
 
     methods: {
         decrement() {
             this.age--;
+        },
+
+        alert() {
+            alert(this.name);
         }
     },
 
