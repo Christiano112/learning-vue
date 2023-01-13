@@ -7,7 +7,8 @@
             <ul v-for="item in todos" :key="item.id">
                 <li>
                     <span>{{ item.title }}</span>
-                    <button :class="{ btn: item.completed }" @click="item.completed = !item.completed">{{ item.completed
+                    <button :class="{ btn: item.completed }" @click="item.completed = !item.completed">{{
+                        item.completed
                     }}</button>
                     <button class="delete" @click="deleteTodo(item)">DELETE</button>
                 </li>
@@ -102,3 +103,11 @@ form input {
     border-radius: 5px;
 }
 </style>
+
+
+<!-- TODO -->
+<!-- 1. ADD LOCAL STORAGE -->
+<!-- 2. ADD EDIT BUTTON -->
+<!-- 3. SESSION STORAGE -->
+<!-- 4. ADD FIREBASE -->
+<!-- 5. ADD ALERTS (APIS AND ALL) -->

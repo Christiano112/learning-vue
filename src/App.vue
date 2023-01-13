@@ -4,6 +4,7 @@
   <ExtraPlay />
   <myLoops />
   <myTodo />
+  <MyComponents />
 </template>
 
 <script>
@@ -12,6 +13,7 @@ import myConditionals from './components/Conditionals.vue';
 import ExtraPlay from './components/Extra.vue';
 import myLoops from "./components/Loop.vue";
 import myTodo from "./components/Todo.vue";
+import MyComponents from '../src/components/Components.vue';
 
 export default {
   name: 'App',
@@ -21,6 +23,7 @@ export default {
     ExtraPlay,
     myLoops,
     myTodo,
+    MyComponents,
   },
 
   data() {
