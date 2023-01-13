@@ -21,6 +21,11 @@ export default {
   padding: 0;
 }
 
+:where(:root) {
+  display: grid;
+  height: 100%;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
