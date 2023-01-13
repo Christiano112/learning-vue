@@ -1,36 +1,15 @@
 <template>
-  <CounterApp />
-  <myConditionals :tellThem="tell" />
-  <ExtraPlay />
-  <myLoops />
-  <myTodo />
-  <MyComponents />
+  <myHeader />
+  <router-view></router-view>
 </template>
 
 <script>
-import CounterApp from './components/Counter.vue';
-import myConditionals from './components/Conditionals.vue';
-import ExtraPlay from './components/Extra.vue';
-import myLoops from "./components/Loop.vue";
-import myTodo from "./components/Todo.vue";
-import MyComponents from '../src/components/Components.vue';
+import myHeader from './components/Header.vue';
 
 export default {
   name: 'App',
   components: {
-    CounterApp,
-    myConditionals,
-    ExtraPlay,
-    myLoops,
-    myTodo,
-    MyComponents,
-  },
-
-  data() {
-    return {
-      tell: "This props stuff is working",
-      myAge: 10,
-    }
+    myHeader,
   },
 }
 </script>

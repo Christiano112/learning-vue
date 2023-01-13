@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h1>Chris Data on Vue</h1>
         <h1>{{secondTime}}</h1>
     </div>
 </template>

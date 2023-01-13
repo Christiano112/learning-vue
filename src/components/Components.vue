@@ -4,7 +4,6 @@
         <MyData secondTime="Chris is a prop master" />
         <mySlot>
             <h1>Chris Slot</h1>
-            <h1>jgdsv</h1>
         </mySlot>
     </div>
 </template>
