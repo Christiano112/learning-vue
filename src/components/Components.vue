@@ -19,11 +19,5 @@
             MyData,
             mySlot,
         },
-
-        data() {
-            return {
-                message: 'Parent'
-            }
-        },
     }
 </script>

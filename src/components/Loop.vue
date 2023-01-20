@@ -2,8 +2,7 @@
     <div>
         <div v-for="players in myArray" :key="players.id">
             <ul>
-                <li>My Name is {{ players.name }}</li>
-                <li>My Age is {{ players.age }}</li>
+                <li>My Name is {{ players.name }} and I am {{ players.age }} old</li>
             </ul>
         </div>
 

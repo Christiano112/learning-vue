@@ -1,27 +1,22 @@
 <template>
     <div>
-        <h1>{{secondTime}}</h1>
+        <h1>{{ secondTime }}</h1>
+        <VuexStore />
     </div>
 </template>
 
 <script>
-    export default {
-        name: 'MyData',
+import VuexStore from './VuexStore.vue';
 
-        props: {
-            secondTime: String,
-        },
+export default {
+    name: 'MyData',
 
-        data() {
-            return {
-                message: 'Hello Vue!'
-            }
-        },
+    components: {
+        VuexStore,
+    },
 
-        methods: {
-            myMethod() {
-                console.log('My Method');
-            }
-        }
-    }
+    props: {
+        secondTime: String,
+    },
+}
 </script>

@@ -1,15 +1,18 @@
 <template>
-  <myHeader />
-  <router-view></router-view>
+  <myData />
+  <!-- <myHeader /> -->
+  <!-- <router-view></router-view> -->
 </template>
 
 <script>
-import myHeader from './components/Header.vue';
+// import myHeader from './components/Header.vue';
+import myData from './components/Data.vue';
 
 export default {
   name: 'App',
   components: {
-    myHeader,
+    // myHeader,
+    myData
   },
 }
 </script>
@@ -20,6 +23,7 @@ export default {
   margin: 0;
   padding: 0;
 }
+
 
 :where(:root) {
   display: grid;

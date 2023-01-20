@@ -3,7 +3,6 @@
         <myConditionals :tellThem="tell" />
         <ExtraPlay />
         <myLoops />
-        <MyComponents />
     </div>
 </template>
 
@@ -11,7 +10,6 @@
 import myConditionals from './Conditionals.vue';
 import ExtraPlay from './Extra.vue';
 import myLoops from "./Loop.vue";
-import MyComponents from './Components.vue';
 
 export default {
     name: "myRandom",
@@ -19,7 +17,6 @@ export default {
         myConditionals,
         ExtraPlay,
         myLoops,
-        MyComponents,
     },
     data() {
         return {

@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h1>Hi There</h1>
         <p>My age is {{ age }}</p>
         <button @click="age++">ADD</button>
         <button v-on:click.shift="decrement">MINUS</button>
